@@ -1,6 +1,7 @@
 # React Spotify
 
 A simple song search using Spotify API and OAuth2 authentication. 
+
 This project is a SPA built with React. 
 
 ---
@@ -11,7 +12,7 @@ For development, you will only need Node.js and a node global package, Yarn, ins
 ### Node
 - #### Node installation
 
-To install Node I recommend to use NVM[https://github.com/nvm-sh/nvm]. 
+To install Node I recommend to use [NVM](https://github.com/nvm-sh/nvm). 
 If the installation was successful, you should be able to run the following command.
 
     $ node --version
