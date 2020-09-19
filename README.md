@@ -7,23 +7,20 @@ This project is a SPA built with React.
 ---
 ## Requirements
 
-For development, you will only need Node.js and a node global package, Yarn, installed in your environment.
+For development, you will only need Node.js  and a node global package, Yarn, installed in your environment.
 
 ### Node
+    Node version : v12.16.3
 - #### Node installation
 
 To install Node I recommend to use [NVM](https://github.com/nvm-sh/nvm). 
 If the installation was successful, you should be able to run the following command.
 
     $ node --version
-    v8.11.3
+    v12.16.3
 
     $ npm --version
     6.1.0
-
-If you need to update `npm`, you can make it using `npm`! Cool right? After running the following command, just open again the command line and be happy.
-
-    $ npm install npm -g
 
 ###
 ### Yarn installation
