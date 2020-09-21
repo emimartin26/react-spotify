@@ -5,10 +5,10 @@ A simple song search using Spotify API and OAuth2 authentication.
 This project is a SPA built with React.
 
 ### Technologies used
-  [React](https://es.reactjs.org/)
-  [Webpack](https://webpack.js.org/)
-  [Babel](https://babeljs.io/)
-  [Material-ui](https://material-ui.com/es/)
+  - [React](https://es.reactjs.org/)
+  - [Webpack](https://webpack.js.org/)
+  - [Babel](https://babeljs.io/)
+  - [Material-ui](https://material-ui.com/es/)
 ---
 ## Requirements
 
