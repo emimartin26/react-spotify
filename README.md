@@ -36,6 +36,11 @@ If the installation was successful, you should be able to run the following comm
     $ cd react-spotify
     $ yarn install
 
+## Configure client_id
+    - Get client_id in https://developer.spotify.com/dashboard/applications.
+    - Create an .env file with the following content:
+        CLIENT_ID=your_client_id
+
 ## Running the project
 
     $ yarn run dev
