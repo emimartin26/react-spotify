@@ -1,7 +1,6 @@
 const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const { CleanWebpackPlugin } = require("clean-webpack-plugin");
-const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const Dotenv = require("dotenv-webpack");
 
 module.exports = {
@@ -25,30 +24,7 @@ module.exports = {
         use: {
           loader: "babel-loader",
         },
-      },
-      {
-        test: /\.css$/i,
-        use: [
-          {
-            loader: MiniCssExtractPlugin.loader,
-            options: {
-              hmr: process.env.NODE_ENV === "development",
-              esModule: true,
-            },
-          },
-          {
-            loader: "css-loader",
-            options: {
-              modules: {
-                // Automatically enable css modules for files satisfying `/\.module\.\w+$/i` RegExp.
-                auto: true,
-                localIdentName: "[name]__[local]--[hash:base64:5]",
-              },
-              importLoaders: 1,
-            },
-          },
-        ],
-      },
+      }
     ],
   },
   plugins: [
