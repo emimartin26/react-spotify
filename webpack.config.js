@@ -34,7 +34,7 @@ module.exports = (env, argv) => ({
       filename: "./index.html",
     }),
     new Dotenv({
-      systemvars: argv.mode.NODE_ENV === "production",
+      systemvars: argv.mode === "production",
     }),
   ],
 });
