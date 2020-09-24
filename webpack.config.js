@@ -12,7 +12,7 @@ module.exports = {
   devServer: {
     contentBase: path.join(__dirname, "dist"),
     compress: true,
-    open: true,
+    open: false,
     port: 9000,
     hot: true,
   },
@@ -34,7 +34,7 @@ module.exports = {
       filename: "./index.html",
     }),
     new Dotenv({
-      systemvars: true,
+      systemvars: false,
     }),
   ],
 };
