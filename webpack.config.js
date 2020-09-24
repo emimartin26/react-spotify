@@ -3,7 +3,7 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 const Dotenv = require("dotenv-webpack");
 
-module.exports = {
+module.exports = (env, argv) => ({
   entry: path.resolve("src/client/index.js"),
   output: {
     filename: "[name].[hash].js",
@@ -34,7 +34,7 @@ module.exports = {
       filename: "./index.html",
     }),
     new Dotenv({
-      systemvars: process.env.NODE_ENV === "production",
+      systemvars: argv.mode.NODE_ENV === "production",
     }),
   ],
-};
+});
