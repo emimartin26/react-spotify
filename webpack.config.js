@@ -24,7 +24,7 @@ module.exports = {
         use: {
           loader: "babel-loader",
         },
-      }
+      },
     ],
   },
   plugins: [
@@ -34,7 +34,7 @@ module.exports = {
       filename: "./index.html",
     }),
     new Dotenv({
-      systemvars: true,
+      systemvars: process.env.NODE_ENV === "production",
     }),
   ],
 };

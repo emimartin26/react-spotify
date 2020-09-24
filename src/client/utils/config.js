@@ -11,5 +11,3 @@ export const scopes = [
   "user-read-currently-playing",
   "user-read-playback-state",
 ];
-
-console.log(redirectUri)
